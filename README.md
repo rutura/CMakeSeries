@@ -8,4 +8,5 @@ Cross Platform C++ Development with CMake -- Youtube Series
 * CMake-Episode 005: [Multi file C++ Project With CMake - Windows/Linux | CMake Starts Here](https://www.youtube.com/watch?v=BCY3gagHX8w&list=PLQMs5svASiXOraccrnEbkd_kVHbAdC2mp&index=5)
 * CMake-Episode 006: [Selecting compilers | CMake Starts Here](https://www.youtube.com/watch?v=SqkV7ifLME4&list=PLQMs5svASiXOraccrnEbkd_kVHbAdC2mp&index=6)
 * CMake-Episode 007: [Targets : Executables, Binaries , C++ Standars and More | CMake Starts Here](https://www.youtube.com/watch?v=foT2XpyHUQE&list=PLQMs5svASiXOraccrnEbkd_kVHbAdC2mp&index=7)
-* CMake-Episode 008: [Target Dependencies - PUBLIC, INTERFACE AND PRIVATE | CMake Starts Here]()
+* CMake-Episode 008: [Target Dependencies - PUBLIC, INTERFACE AND PRIVATE | CMake Starts Here](https://youtu.be/ARZd-fSUJXY)
+* CMake-Episode 009: [Organizing Your CMake Code - The include Command | CMake Starts Here](https://youtu.be/6Ows5uZKqGQ)
