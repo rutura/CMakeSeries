@@ -6,7 +6,7 @@ add_executable(
   test_run_app.cpp
 )
 target_link_libraries(
-  unit_tests PRIVATE calculator run_app Catch2::Catch2WithMain
+  unit_tests PRIVATE run_app Catch2::Catch2WithMain
 )
 
 include(CTest)
