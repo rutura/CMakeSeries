@@ -1,14 +1,13 @@
 #include <iostream>
-#include <fmt/format.h>
 #include "person.h"
 
 int main() {
   Person p("John", 42);
-  std::cout << fmt::format("{} is {} years old.", p.getName(), p.getAge())
+  std::cout << p.getName() << " is " << p.getAge() << " years old."
             << std::endl;
-  Person p2("Jane", 43);
-  std::cout << fmt::format("{} is {} years old.", p2.getName(), p2.getAge())
+  p.setName("Jane");
+  p.setAge(43);
+  std::cout << p.getName() << " is " << p.getAge() << " years old."
             << std::endl;
-  fmt::println("Hello, World!");
   return 0;
 }
