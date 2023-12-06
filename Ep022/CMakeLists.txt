@@ -1,6 +1,5 @@
 #[==[
-    . Introducing third part libs through FetchContent.
-    . Using the google test reference 
+    . Introducing testing. Using the google test reference 
         . https://google.github.io/googletest/quickstart-cmake.html
     . Update to use the latest version of google test on github. Pick the tag
     . Start with the calculator files in the root and build the project
