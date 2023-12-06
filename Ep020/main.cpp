@@ -1,13 +1,14 @@
 #include <iostream>
+#include <fmt/format.h>
+#include "person.h"
 
-#include "calculator.h"
-
-int main () {
-    Calculator calc;
-    std::cout << "add(10,4): " << calc.add(10,4) << std::endl;
-    std::cout << "sub(10,4): " << calc.sub(10,4) << std::endl;
-    std::cout << "mul(10,4): " << calc.mul(10,4) << std::endl;
-    std::cout << "div(10,4): " << calc.div(10,4) << std::endl;
-    std::cout << "mod(10,4): " << calc.mod(10,4) << std::endl;
-    return 0;
+int main() {
+  Person p("John", 42);
+  std::cout << fmt::format("{} is {} years old.", p.getName(), p.getAge())
+            << std::endl;
+  Person p2("Jane", 43);
+  std::cout << fmt::format("{} is {} years old.", p2.getName(), p2.getAge())
+            << std::endl;
+  fmt::println("Hello, World!");
+  return 0;
 }
