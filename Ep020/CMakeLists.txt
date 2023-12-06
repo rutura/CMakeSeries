@@ -1,4 +1,5 @@
 #[==[
+    . Introducing third part libs through FetchContent.
     . Using the google test reference 
         . https://google.github.io/googletest/quickstart-cmake.html
     . Update to use the latest version of google test on github. Pick the tag
@@ -17,6 +18,8 @@ cmake_minimum_required(VERSION 3.20)
 project(Dependencies)
 
 enable_testing()
+
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
