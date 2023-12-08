@@ -4,6 +4,7 @@
         1. Manually dealing with  the Dyxyfile and calling doxygen from it.
         2. Using the built-in doxygen module in CMake.
     . This project will explore option 2.
+        . We will take the chance to introduce find_package and find module files.
 
     . First, remove the add_custom_target and add_custom_command from the CMakeLists.txt file.
     . Add the doxygen_add_docs command and make sure we have the proper settings.
