@@ -4,6 +4,8 @@
         1. Manually dealing with  the Dyxyfile and calling doxygen from it.
         2. Using the built-in doxygen module in CMake.
     . This project will explore option 1.
+        . Introduce find_program
+        . find_package will be introduced in the next project.
 
     . First, manually generate a doxyfile as shown below:
         1. doxygen -g
