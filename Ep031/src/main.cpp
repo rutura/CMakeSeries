@@ -1,7 +1,9 @@
 #include <SFML/Graphics.hpp>
+#include <fmt/core.h>
 
 int main()
 {
+    fmt::print("Hello, {}!\n", "world");
     auto window = sf::RenderWindow{ { 1920u, 1080u }, "CMake SFML Project" };
     window.setFramerateLimit(144);
 
@@ -15,7 +17,7 @@ int main()
             }
         }
 
-        window.clear(sf::Color::Green);
+        window.clear(sf::Color::Blue);
         window.display();
     }
 }
