@@ -5,7 +5,8 @@
     {
       "name": "fmt",
       "version>=": "10.1.0"
-    }
+    },
+    "sfml"
   ],
   "default-features": [],
   "features": {

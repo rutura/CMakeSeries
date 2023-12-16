@@ -8,6 +8,8 @@
 
     . Add the vcpkg.json file to the root of the project
 
+    . For automatic dependency pulling, sett the toolchain file variable.
+
 #]==]
 
 cmake_minimum_required(VERSION 3.20)

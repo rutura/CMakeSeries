@@ -11,6 +11,7 @@
           to manually hardwire the location in like so (See test/CMakeLists.txt)): 
 
           . list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/build/_deps/catch2-src/extras)
+          . Strangely, things work just fine if I use raw FetchContent instead of CPM.
 
 #]==]
 

@@ -10,7 +10,6 @@
 
 cmake_minimum_required(VERSION 3.20)
 
-#set(CMAKE_TOOLCHAIN_FILE "$ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake")
 set(CMAKE_TOOLCHAIN_FILE "${CMAKE_BINARY_DIR}/conan_toolchain.cmake")
 
 project(Dependencies)
@@ -25,7 +24,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #Handle dependencies
 option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 
-# include("$ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake")
 #include(${CMAKE_BINARY_DIR}/conan_toolchain.cmake)
 
 find_package(Catch2 CONFIG REQUIRED)

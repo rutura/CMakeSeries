@@ -1,5 +1,6 @@
 #[==[
     . Using doxygen to write documentation
+        . Reference: https://www.doxygen.nl/manual/starting.html
     . There are two approaches: 
         1. Manually dealing with  the Dyxyfile and calling doxygen from it.
         2. Using the built-in doxygen module in CMake.

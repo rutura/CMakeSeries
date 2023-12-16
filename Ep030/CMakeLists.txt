@@ -1,4 +1,9 @@
 #[==[
+    . Presets. Why? 
+        . They are a way to configure your project in a declarative way.
+        . They make it easy to configure your project for different platforms.
+        . Sharing your project configuration is easy.
+        . IDEs and editors use them to configure your project. This makes it easy to switch between them.
     . Using CMakePresents with a vcpkg powered project.
     . Remember to have this content in your settings.json file for the status bar to show up.
 
@@ -6,6 +11,10 @@
                 "cmake.useCMakePresets": "always",
                 "cmake.options.statusBarVisibility": "visible"
             }
+    . Show how to use them from the terminal
+    . Then use them from VSCode
+    . Show how to debug
+    . Show test integration. [Sometimes need to reload VSCode]
 
 
 #]==]

@@ -1,5 +1,7 @@
 #[=[
      Exploring CMake's Custom Targets, custom modules and code formatting with clang-format
+        . Go from the clang-format official reference: 
+                . https://clangpowertools.com/blog/getting-started-with-clang-format-style-options.html
         . Start with a simple C++ project containing a main.cpp and a person.cpp file
         . Manually format the code with clang-format
         . Add a function to format the code with clang-format

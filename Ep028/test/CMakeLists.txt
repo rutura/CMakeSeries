@@ -7,6 +7,8 @@ add_executable(
 target_link_libraries(
   unit_tests PRIVATE run_app Catch2::Catch2WithMain)
 
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/build/_deps/catch2-src/extras)
+#We don't need this with vcpkg
+#list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/build/_deps/catch2-src/extras)
+
 include(Catch)
 catch_discover_tests(unit_tests)

@@ -23,5 +23,3 @@ if(NOT DOXYGEN_FOUND)
 
      doxygen_add_docs(documentation ${PROJECT_SOURCE_DIR}/src COMMENT "Generating documentation")
 endif()
-
-

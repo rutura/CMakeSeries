@@ -53,3 +53,6 @@ include/*
 lib/*
 bin/*
 test/test_runner
+
+## The user cmake preset file
+CMakeUserPresets.json

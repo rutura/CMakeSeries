@@ -3,8 +3,16 @@
         . Install conan: pip install conan
         . Set up the conanfile.py in the root directory of the project.
         . Install the dependencies: conan install . -s build_type=Debug -s compiler.cppstd=20 --output-folder=build --build missing
-        . Configure: cmake -S . -B build
-        . Build: cmake --build build
+            . This will generate the preset files for you
+
+        . Configure and build: 
+            . In VSCode: 
+                . Set up your presets and clic on the buttons.
+                . After you configure and build, you may need to restart VSCode
+                    for the tests to integrate correctly.
+            . On the terminal
+                . Configure: cmake -S . -B build
+                . Build: cmake --build build
 
 #]==]
 

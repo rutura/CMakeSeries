@@ -9,7 +9,7 @@
             . Change the conanfile.py to add dependencies you need
         . Run the conan install command to install dependencies: 
             . conan install . -s build_type=Debug -s compiler.cppstd=20
-        . After it runs two CMakePresets.json files will be generated, one in the root and the other
+        . After it runs two, CMakePresets.json files will be generated, one in the root and the other
             in the build folder.
         . The CMakeUserPresets.json isn't meant to be checked in your version control system.
 
