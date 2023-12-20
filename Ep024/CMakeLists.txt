@@ -1,8 +1,5 @@
 #[==[
-    . How do you test the code in the main.cpp? 
-    . Extract the code into the run_app library
-    . Link rooster to the run_app library
-    . Also link the unit_test target to the run_app library
+    . How do you test the code in main.cpp?
 #]==]
 
 cmake_minimum_required(VERSION 3.20)

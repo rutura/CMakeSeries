@@ -1,14 +1,5 @@
 #[==[
-    . Introducing testing. Using the google test reference 
-        . https://google.github.io/googletest/quickstart-cmake.html
-    . Update to use the latest version of google test on github. Pick the tag
-    . Start with the calculator files in the root and build the project
-    . Then move them into src and add the subdirectory
-    . Move on to add the test folder and adapt the FetchContent code
-    . Add the test folder and add the subdirectory. Make sure to put the enable_testing thing
-        right after the project command.
-    . Make sure to explain the theory of FetchContent in the slides. Especially how it 
-        exposes the targets to your applications.
+    . Introducing testing. Using the google test reference
 
 #]==]
 

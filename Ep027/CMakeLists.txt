@@ -1,17 +1,5 @@
 #[==[
     . Using CPM for package management
-      . It builds on top of FetchContent and provides a 
-         different interface.
-
-      . You specify the package name and the git url
-         and it will download the package and build it
-         for you. You can use tags, versions or both.
-
-       . CPM failed to find the Catch custom module for some reason, and I had
-          to manually hardwire the location in like so (See test/CMakeLists.txt)): 
-
-          . list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/build/_deps/catch2-src/extras)
-          . Strangely, things work just fine if I use raw FetchContent instead of CPM.
 
 #]==]
 

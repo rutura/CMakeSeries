@@ -1,14 +1,5 @@
 #[==[
-    . Using vcpkg
-    . Install vcpkg
-    . Point to the location of vcpkg through the include: 
-        . include("$ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake")
-        . You can also set the environment variable before the call the the project command,
-            as stated in the docs: https://learn.microsoft.com/en-us/vcpkg/consume/manifest-mode?tabs=cmake%2Cbuild-MSBuild
-
-    . Add the vcpkg.json file to the root of the project
-
-    . For automatic dependency pulling, sett the toolchain file variable.
+    . Using vcpkg as a dependency manager
 
 #]==]
 

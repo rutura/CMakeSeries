@@ -1,9 +1,5 @@
 #[=[
      Exploring FetchContent.
-          . FetchContent_Declare(<some_name>)
-          . FetchContent_MakeAvailable(<some_name>)
-          . some_name can be anything you want, but it's good to make it the same as the dependency
-               you're fetching, in this case, we name it fmt.
 #]=]
 
 

@@ -4,19 +4,12 @@
 
         . Configure and build: 
             . In VSCode: 
-                . Set up your presets and clic on the buttons.
+                . Set up your presets and click on the buttons.
                 . After you configure and build, you may need to restart VSCode
                     for the tests to integrate correctly.
             . On the terminal
                 . Configure: cmake -S . -B build
                 . Build: cmake --build build
-
-    . Problem
-        . We would like the docs to be generated in the binary dir, regardless of where 
-            it is nested. 
-        . In this project, the Doxyfile is hardwiring the docs to be in a build folder, nested from where the doxygen binary was called from (WORKING_DIRECTORY).
-        . We could bypass this problem by just using the builtin doxygen_add_docs function. 
-        . It is also possible to generate a doxyfile from a template Doxyfile.in file, but we won't go that far.
 
 #]==]
 
