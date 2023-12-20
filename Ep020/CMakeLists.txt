@@ -24,5 +24,6 @@ add_executable(rooster main.cpp person.cpp) # Replace with your source files
 target_include_directories(rooster PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 include(ClangFormat)
+
 add_clang_format_target(format-code ${PROJECT_SOURCE_DIR})
-add_dependencies(rooster format-code)
+# add_dependencies(rooster format-code)

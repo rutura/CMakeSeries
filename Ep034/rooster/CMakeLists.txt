@@ -1,18 +1,11 @@
-#[==[
-    . This project just showcases the use of the cmake-init tool.
-      . We generate a c++ project using vcpkg as package manager.
-      . It also has doxygen and clang format integrated.
-
-#]==]
-
 cmake_minimum_required(VERSION 3.14)
 
 include(cmake/prelude.cmake)
 
 project(
-    rooster
+    Rooster
     VERSION 0.1.0
-    DESCRIPTION "A starter C++ project"
+    DESCRIPTION "This is a starter C++ project using CMake"
     HOMEPAGE_URL "https://example.com/"
     LANGUAGES CXX
 )
@@ -23,31 +16,31 @@ include(cmake/variables.cmake)
 # ---- Declare library ----
 
 add_library(
-    rooster_lib OBJECT
+    Rooster_lib OBJECT
     source/lib.cpp
 )
 
 target_include_directories(
-    rooster_lib ${warning_guard}
+    Rooster_lib ${warning_guard}
     PUBLIC
     "$<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/source>"
 )
 
-target_compile_features(rooster_lib PUBLIC cxx_std_20)
+target_compile_features(Rooster_lib PUBLIC cxx_std_20)
 
 find_package(fmt REQUIRED)
-target_link_libraries(rooster_lib PRIVATE fmt::fmt)
+target_link_libraries(Rooster_lib PRIVATE fmt::fmt)
 
 # ---- Declare executable ----
 
-add_executable(rooster_exe source/main.cpp)
-add_executable(rooster::exe ALIAS rooster_exe)
+add_executable(Rooster_exe source/main.cpp)
+add_executable(Rooster::exe ALIAS Rooster_exe)
 
-set_property(TARGET rooster_exe PROPERTY OUTPUT_NAME rooster)
+set_property(TARGET Rooster_exe PROPERTY OUTPUT_NAME Rooster)
 
-target_compile_features(rooster_exe PRIVATE cxx_std_20)
+target_compile_features(Rooster_exe PRIVATE cxx_std_20)
 
-target_link_libraries(rooster_exe PRIVATE rooster_lib)
+target_link_libraries(Rooster_exe PRIVATE Rooster_lib)
 
 # ---- Install rules ----
 
@@ -57,12 +50,12 @@ endif()
 
 # ---- Developer mode ----
 
-if(NOT rooster_DEVELOPER_MODE)
+if(NOT Rooster_DEVELOPER_MODE)
   return()
 elseif(NOT PROJECT_IS_TOP_LEVEL)
   message(
       AUTHOR_WARNING
-      "Developer mode is intended for developers of rooster"
+      "Developer mode is intended for developers of Rooster"
   )
 endif()
 

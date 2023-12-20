@@ -1,6 +1,6 @@
-# rooster
+# Rooster
 
-This is the rooster project.
+This is the Rooster project.
 
 # Building and installing
 

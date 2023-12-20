@@ -43,4 +43,10 @@ struct Calculator {
       \return a mod b.
     */ 
     int mod (int, int);
+
+
+    //! A member to print a description of the calculator.
+    /*!
+    */
+    void print_description();
 };

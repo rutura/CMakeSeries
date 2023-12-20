@@ -2,7 +2,7 @@
 
 int main()
 {
-    auto window = sf::RenderWindow{ { 1920u, 1080u }, "CMake SFML Project" };
+    auto window = sf::RenderWindow{ { 1920u, 1080u }, "I am the king of the universe!" };
     window.setFramerateLimit(144);
 
     while (window.isOpen())
@@ -15,7 +15,7 @@ int main()
             }
         }
 
-        window.clear(sf::Color::Blue);
+        window.clear(sf::Color::Red);
         window.display();
     }
 }

@@ -1,11 +1,11 @@
 # ---- Developer mode ----
 
 # Developer mode enables targets and code paths in the CMake scripts that are
-# only relevant for the developer(s) of rooster
+# only relevant for the developer(s) of Rooster
 # Targets necessary to build the project must be provided unconditionally, so
 # consumers can trivially build and package the project
 if(PROJECT_IS_TOP_LEVEL)
-  option(rooster_DEVELOPER_MODE "Enable developer mode" OFF)
+  option(Rooster_DEVELOPER_MODE "Enable developer mode" OFF)
 endif()
 
 # ---- Warning guard ----
@@ -17,12 +17,12 @@ endif()
 set(warning_guard "")
 if(NOT PROJECT_IS_TOP_LEVEL)
   option(
-      rooster_INCLUDES_WITH_SYSTEM
-      "Use SYSTEM modifier for rooster's includes, disabling warnings"
+      Rooster_INCLUDES_WITH_SYSTEM
+      "Use SYSTEM modifier for Rooster's includes, disabling warnings"
       ON
   )
-  mark_as_advanced(rooster_INCLUDES_WITH_SYSTEM)
-  if(rooster_INCLUDES_WITH_SYSTEM)
+  mark_as_advanced(Rooster_INCLUDES_WITH_SYSTEM)
+  if(Rooster_INCLUDES_WITH_SYSTEM)
     set(warning_guard SYSTEM)
   endif()
 endif()

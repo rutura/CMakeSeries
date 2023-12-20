@@ -7,10 +7,10 @@ endif()
 
 add_custom_target(
     run-exe
-    COMMAND rooster_exe
+    COMMAND Rooster_exe
     VERBATIM
 )
-add_dependencies(run-exe rooster_exe)
+add_dependencies(run-exe Rooster_exe)
 
 option(BUILD_MCSS_DOCS "Build documentation using Doxygen and m.css" OFF)
 if(BUILD_MCSS_DOCS)

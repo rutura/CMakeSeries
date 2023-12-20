@@ -33,6 +33,7 @@ set(CMAKE_CXX_STANDARD 20) # Default C++ standard for targets
 #Bring in the dependencies
 
 find_package(fmt CONFIG REQUIRED)
+find_package(sfml CONFIG REQUIRED)
 find_package(GTest CONFIG REQUIRED)
 
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
@@ -48,6 +49,7 @@ add_subdirectory(src/core)
 
 # Create an executable that uses the core library
 add_executable(rooster src/main/main.cpp)
+target_link_libraries(rooster PRIVATE sfml-graphics)
 
 # Link the executable with the core library
 target_link_libraries(rooster

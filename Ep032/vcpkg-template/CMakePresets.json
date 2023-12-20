@@ -11,7 +11,7 @@
         "description": "Sets generator, build and install directory, vcpkg",
         "hidden": true,
         "generator": "Ninja",
-        "binaryDir": "${sourceDir}/build/${presetName}"
+        "binaryDir": "${sourceDir}/build"
       },
       {
         "name": "windows-base",

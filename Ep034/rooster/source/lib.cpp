@@ -3,11 +3,6 @@
 #include <fmt/core.h>
 
 library::library()
-    : name {fmt::format("{}", "rooster")}
+    : name {fmt::format("{}", "Rooster")}
 {
-}
-
-void library::print_message(const std::string& message) const
-{
-  fmt::print("{}\n", message);
 }

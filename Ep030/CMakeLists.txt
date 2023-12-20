@@ -55,5 +55,3 @@ target_link_libraries(use_fmt PRIVATE fmt::fmt)
 add_subdirectory(test)
 
 add_subdirectory(docs)
-
-message(STATUS "CMAKE_MODULE_PATH: ${CMAKE_MODULE_PATH}")

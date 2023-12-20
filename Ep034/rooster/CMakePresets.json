@@ -10,7 +10,7 @@
       "name": "dev-mode",
       "hidden": true,
       "cacheVariables": {
-        "rooster_DEVELOPER_MODE": "ON",
+        "Rooster_DEVELOPER_MODE": "ON",
         "VCPKG_MANIFEST_FEATURES": "test"
       }
     },

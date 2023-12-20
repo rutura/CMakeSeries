@@ -1,6 +1,6 @@
 install(
-    TARGETS rooster_exe
-    RUNTIME COMPONENT rooster_Runtime
+    TARGETS Rooster_exe
+    RUNTIME COMPONENT Rooster_Runtime
 )
 
 if(PROJECT_IS_TOP_LEVEL)

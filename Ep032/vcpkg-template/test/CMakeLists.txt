@@ -1,5 +1,3 @@
-
-
 add_executable(unit_tests 
             lib1/lib1_test.cpp 
             lib2/lib2_test.cpp

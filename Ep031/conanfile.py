@@ -2,8 +2,8 @@ from conan import ConanFile
 from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout, CMakeDeps
 
 
-class roosterRecipe(ConanFile):
-    name = "foo"
+class RoosterRecipe(ConanFile):
+    name = "Rooster"
     version = "1.0"
     package_type = "application"
 
@@ -11,7 +11,7 @@ class roosterRecipe(ConanFile):
     license = "<Put the package license here>"
     author = "<Put your name here> <And your email here>"
     url = "<Package recipe repository url here, for issues about the package>"
-    description = "<Description of foo package here>"
+    description = "<Description of Rooster package here>"
     topics = ("<Put some tag here>", "<here>", "<and here>")
 
     # Binary configuration
@@ -42,3 +42,7 @@ class roosterRecipe(ConanFile):
     def package(self):
         cmake = CMake(self)
         cmake.install()
+
+    
+
+    

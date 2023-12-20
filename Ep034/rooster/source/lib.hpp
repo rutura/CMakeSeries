@@ -17,13 +17,5 @@ struct library
    */
   library();
 
-  /**
-   * @brief This function prints a message to the standard output
-   * 
-   * @param message
-   * @return
-   */
-  void print_message(const std::string& message) const;
-
   std::string name;
 };
